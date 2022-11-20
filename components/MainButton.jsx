@@ -26,8 +26,7 @@ const styles = StyleSheet.create({
     padding: (10, 14),
     gap: 8,
     width: 115.07,
-    height: 40,
-    // transform: 'rotate(-45deg)'
+    height: 30,
   },
   buttonText: {
     color: 'white',

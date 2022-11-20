@@ -55,6 +55,7 @@ const HomeScreen = props => {
         <View>
         <View style={styles.notifyContainer}>
             <View style = { styles.headerText }>
+              <View style={styles.line}></View>
             <Text style={styles.smallText}>Coming Soon</Text>
             </View>
             <Text style = { styles.NotifyBody }>Get Notified When we Launch</Text>
@@ -142,11 +143,11 @@ const styles = StyleSheet.create({
  headerSection:{
     flex: 1,
     flexDirection: 'row',
-    justifyContent: 'space-around',
+    justifyContent: 'space-between',
     alignItems: 'center',
-    width: '100%',
+    width: '90%',
     height: '100%',
-    padding: '2%'
+    padding: '1%'
 
   },
   imageLogo: {
@@ -257,7 +258,7 @@ rectangle:{
   display: 'flex',
   flexDirection: 'row',
   justifyContent: 'center',
-  width: 134.19,
+  width: '80%',
   height: 38.8,
   backgroundColor: 'rgba(217, 217, 217, 0.5)',
   borderRadius: 4.85041,
@@ -311,6 +312,9 @@ footerNote: {
   alignItems: 'flex-end',
   justifyContent: 'center',
 
+},
+footer: {
+  marginTop: 40
 },
 social: {
   padding: 3,
