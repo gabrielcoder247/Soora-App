@@ -292,7 +292,6 @@ icons:{
 icon: {
   width: 24.83,
   height: 24.36,
-  backgroundColor: 'linear-gradient(0deg, rgba(59, 89, 152, 0.1), rgba(59, 89, 152, 0.1)), rgba(255, 0, 0, 0.05)',
   filter: 'blur(344.294)',
   padding: 15,
   margin: 3
@@ -313,7 +312,7 @@ social: {
   padding: 3,
   borderWidth: 1,
   borderRadius: 50,
-  margin: 5
+  margin: 5,
 },
 text: {
   fontFamily: 'Inter',
