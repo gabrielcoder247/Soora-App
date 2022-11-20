@@ -25,18 +25,18 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     padding: (10, 14),
     gap: 8,
-    width: 97.07,
-    height: 32,
+    width: 115.07,
+    height: 40,
     // transform: 'rotate(-45deg)'
   },
   buttonText: {
     color: 'white',
-    width: 54,
-    height: 12,
+    width: 80,
+    height: 16,
     fontFamily: 'Inter',
     fontStyle: 'normal',
     fontWeight: 700,
-    fontSize: 10,
+    fontSize: 15,
     lineHeight: 12,
 
     // display: flex,
