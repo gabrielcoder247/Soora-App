@@ -43,7 +43,6 @@ const HomeScreen = props => {
               resizeMode="cover"
             />
           </TouchableOpacity>
-
         </View>
         <View style={styles.landingSection}>
         <Image
@@ -138,7 +137,6 @@ const styles = StyleSheet.create({
     filter: 'blur(344.294)',
     width: '100%',
     height: '100%',
-
   },
  headerSection:{
     flex: 1,
@@ -148,7 +146,6 @@ const styles = StyleSheet.create({
     width: '90%',
     height: '100%',
     padding: '1%'
-
   },
   imageLogo: {
     width: 74,
@@ -156,10 +153,9 @@ const styles = StyleSheet.create({
     flex: 'none',
     order: 0,
     flexGrow: 0,
-
   },
   image: {
-    width: 160.83,
+    width: 145.83,
     height: 50.82,
     flex: 'none',
     order: 0,
@@ -218,7 +214,6 @@ body: {
   textTransform: 'capitalize',
 },
 NotifyBody: {
-
     width: '200',
     height: '88',
     fontFamily: 'Inter',
@@ -252,7 +247,6 @@ notifyContainer: {
   justifyContent: 'center',
   alignItems: 'center',
   marginTop: 20,
-
 },
 rectangle:{
   display: 'flex',
@@ -263,7 +257,6 @@ rectangle:{
   backgroundColor: 'rgba(217, 217, 217, 0.5)',
   borderRadius: 4.85041,
   marginTop: 15
-
 },
 landingImage: {
   width: 350.83,
