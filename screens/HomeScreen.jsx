@@ -21,6 +21,7 @@ const HomeScreen = props => {
           <View>
         <View style={styles.TextContainer}>
             <View style = { styles.headerText }>
+              <View style={styles.line}></View>
             <Text style={styles.smallText}>Coming Soon</Text>
             </View>
             <Text style = { styles.body }>Bringing Muslims together</Text>
@@ -28,16 +29,21 @@ const HomeScreen = props => {
         </View>
         </View>
         <View style={styles.rectangle}>
-        <Image
-          source={require('../assets/images/google-play.png')}
-          style={styles.image}
-          resizeMode="cover"
-        />
-        <Image
-          source={require('../assets/images/apple-store.png')}
-          style={styles.image}
-          resizeMode="cover"
-        />
+          <TouchableOpacity>
+              <Image
+              source={require('../assets/images/google-play.png')}
+              style={styles.image}
+              resizeMode="cover"
+            />
+          </TouchableOpacity>
+          <TouchableOpacity>
+              <Image
+              source={require('../assets/images/apple-store.png')}
+              style={styles.image}
+              resizeMode="cover"
+            />
+          </TouchableOpacity>
+
         </View>
         <View style={styles.landingSection}>
         <Image
@@ -49,7 +55,6 @@ const HomeScreen = props => {
         <View>
         <View style={styles.notifyContainer}>
             <View style = { styles.headerText }>
-            <View style={{flex: 1, height: 1, backgroundColor: 'black'}}></View>
             <Text style={styles.smallText}>Coming Soon</Text>
             </View>
             <Text style = { styles.NotifyBody }>Get Notified When we Launch</Text>
@@ -77,31 +82,43 @@ const HomeScreen = props => {
         </View>
         <TouchableOpacity style={styles.footer}>
           <View style={styles.icons}>
+        <TouchableOpacity style={styles.social}>
+            <Image
+            source={require('../assets/images/facebook.png')}
+            style={styles.icon}
+            resizeMode="cover"
+          />
+        </TouchableOpacity>
+         <TouchableOpacity style={styles.social}>
           <Image
-          source={require('../assets/images/facebook.png')}
-          style={styles.icon}
-          resizeMode="cover"
-        />
+            source={require('../assets/images/twitter.png')}
+            style={styles.icon}
+            resizeMode="cover"
+          />
+         </TouchableOpacity>
+         <TouchableOpacity style={styles.social}>
+          <Image
+            source={require('../assets/images/instagram.png')}
+            style={styles.icon}
+            resizeMode="cover"
+          />
+         </TouchableOpacity>
+       <TouchableOpacity style={styles.social}>
         <Image
-          source={require('../assets/images/twitter.png')}
-          style={styles.icon}
-          resizeMode="cover"
-        />
-        <Image
-          source={require('../assets/images/instagram.png')}
-          style={styles.icon}
-          resizeMode="cover"
-        />
-        <Image
-          source={require('../assets/images/tiktok.png')}
-          style={styles.icon}
-          resizeMode="cover"
-        />
-        <Image
-          source={require('../assets/images/youtube.png')}
-          style={styles.icon}
-          resizeMode="cover"
-        />
+            source={require('../assets/images/tiktok.png')}
+            style={styles.icon}
+            resizeMode="cover"
+          />
+       </TouchableOpacity>
+
+        <TouchableOpacity style={styles.social}>
+          <Image
+            source={require('../assets/images/youtube.png')}
+            style={styles.icon}
+            resizeMode="cover"
+          />
+        </TouchableOpacity>
+
           </View>
         </TouchableOpacity>
         <View style={styles.footerNote}>
@@ -166,10 +183,11 @@ const styles = StyleSheet.create({
   },
   headerText: {
     display: 'flex',
+    flexDirection: 'row',
     alignItems: 'flex-end',
     justifyContent: 'center',
     height: 15,
-    width: 77,
+    width: 120,
     fontFamily: 'Inter',
     fontStyle: 'normal',
     fontWeight: 500,
@@ -219,6 +237,13 @@ TextContainer: {
   alignItems: 'center',
   marginTop: 20,
 
+},
+line: {
+  borderTopWidth: 1,
+  width:'15%',
+  borderColor: "#0B0B0B",
+  marginBottom: 8,
+  marginRight: 10
 },
 notifyContainer: {
   display: 'flex',
@@ -271,23 +296,27 @@ icons:{
 
 },
 icon: {
-  width: 35.83,
-  height: 35.36,
+  width: 24.83,
+  height: 24.36,
   backgroundColor: 'linear-gradient(0deg, rgba(59, 89, 152, 0.1), rgba(59, 89, 152, 0.1)), rgba(255, 0, 0, 0.05)',
   filter: 'blur(344.294)',
-  borderWidth: 2,
-  borderRadius: 50,
-  padding: 22,
+  padding: 15,
   margin: 3
 },
 footerNote: {
   borderTopWidth: 1,
   width:'100%',
-  borderColor: "black",
+  borderColor: "#0B0B0B",
   marginTop: 10,
   alignItems: 'flex-end',
   justifyContent: 'center',
 
+},
+social: {
+  padding: 3,
+  borderWidth: 1,
+  borderRadius: 50,
+  margin: 5
 },
 text: {
   fontFamily: 'Inter',
@@ -298,7 +327,7 @@ text: {
   display: 'flex',
   width: 330,
   height: 30,
-  marginTop: 10,
+  marginTop: 15,
   marginBottom: 6,
 
 },
