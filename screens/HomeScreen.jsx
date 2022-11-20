@@ -18,18 +18,14 @@ const HomeScreen = props => {
         </View>
         </View>
         <View>
-
           <View>
         <View style={styles.TextContainer}>
             <View style = { styles.headerText }>
             <Text style={styles.smallText}>Coming Soon</Text>
             </View>
-
-
             <Text style = { styles.body }>Bringing Muslims together</Text>
             </View>
         </View>
-
         </View>
         <View style={styles.rectangle}>
         <Image
@@ -42,7 +38,6 @@ const HomeScreen = props => {
           style={styles.image}
           resizeMode="cover"
         />
-
         </View>
         <View style={styles.landingSection}>
         <Image
@@ -57,8 +52,6 @@ const HomeScreen = props => {
             <View style={{flex: 1, height: 1, backgroundColor: 'black'}}></View>
             <Text style={styles.smallText}>Coming Soon</Text>
             </View>
-
-
             <Text style = { styles.NotifyBody }>Get Notified When we Launch</Text>
             </View>
         </View>
@@ -75,7 +68,6 @@ const HomeScreen = props => {
       </View>
       <Text style={styles.dontSpam}>Don’t worry, we won’t spam</Text>
     </SafeAreaView>
-
     <View >
         <Image
           source={require('../assets/images/landing-image-1.png')}
@@ -111,13 +103,10 @@ const HomeScreen = props => {
           resizeMode="cover"
         />
           </View>
-
         </TouchableOpacity>
         <View style={styles.footerNote}>
           <Text style={styles.text}>Copyright © 2022 Soora. All rights reserved</Text>
         </View>
-
-
     </View>
   );
 };
@@ -189,7 +178,6 @@ const styles = StyleSheet.create({
     color: '#0B0B0B',
     marginTop: 5,
     marginBottom: 10,
-
 },
 smallText:{
   clear: 'both',
@@ -293,7 +281,6 @@ icon: {
   margin: 3
 },
 footerNote: {
-  // borderTopWidth: (1, 'black', 'solid'),
   borderTopWidth: 1,
   width:'100%',
   borderColor: "black",
@@ -310,9 +297,9 @@ text: {
   lineHeight: 15,
   display: 'flex',
   width: 330,
-  height: 15,
+  height: 30,
   marginTop: 10,
-  marginBottom: 10,
+  marginBottom: 6,
 
 },
 container1: {
@@ -321,10 +308,6 @@ container1: {
   alignItems: 'center',
   paddingTop: 8,
   padding: 8,
-
-  // backgroundColor: 'linear-gradient(0deg, rgba(59, 89, 152, 0.1), rgba(59, 89, 152, 0.1)), rgba(255, 0, 0, 0.05)',
-  // filter: 'blur(344.294)',
-  // backgroundColor: 'lightgreen',
 },
 buttonText1:{
   textDecorationLine:"none",
@@ -346,10 +329,6 @@ buttonText1:{
   fontSize: 13,
   lineHeight: 15,
   padding: 6,
-
-  // width: 330,
-  // height: 15,
-
 },
 input: {
   flex: 2,
@@ -367,7 +346,6 @@ button1: {
 
 },
 firstBox: {
-  // backgroundColor: 'green',
   paddingBottom: 2,
   top:-2,
   borderRadius:5
@@ -378,8 +356,6 @@ row: {
   backgroundColor: 'white',
   padding:3,
   borderRadius: 100,
-  // backgroundColor: 'linear-gradient(0deg, rgba(59, 89, 152, 0.1), rgba(59, 89, 152, 0.1)), rgba(255, 0, 0, 0.05)',
-  // filter: 'blur(344.294)',
 },
 
 });
