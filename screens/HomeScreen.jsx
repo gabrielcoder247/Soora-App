@@ -385,11 +385,12 @@ firstBox: {
 },
 row: {
   flexDirection: 'row',
-  width: '100%',
+  width: '90%',
   backgroundColor: 'white',
   padding:3,
   borderRadius: 100,
   borderWidth: 1,
+  marginLeft: 15,
   backgroundColor: 'linear-gradient(0deg, rgba(59, 89, 152, 0.1), rgba(59, 89, 152, 0.1)), rgba(255, 0, 0, 0.05)',
 },
 
