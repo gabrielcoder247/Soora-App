@@ -365,7 +365,7 @@ buttonText1:{
 },
 input: {
   flex: 2,
-  borderRadius:5
+  borderRadius:50,
 },
 button1: {
   flex: 0.5,
@@ -389,6 +389,8 @@ row: {
   backgroundColor: 'white',
   padding:3,
   borderRadius: 100,
+  borderWidth: 1,
+  backgroundColor: 'linear-gradient(0deg, rgba(59, 89, 152, 0.1), rgba(59, 89, 152, 0.1)), rgba(255, 0, 0, 0.05)',
 },
 
 });
