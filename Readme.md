@@ -32,7 +32,7 @@ Additional description about the project and its features.
 **GABRIEL NWACHUKWU**
 
 - GitHub: [@githubhandle](https://github.com/gabrielcoder247)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/gabriel-nwachukwu-209613173/)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/gabriel-nwachukwu)
 
 
 ## 🤝 Contributing
